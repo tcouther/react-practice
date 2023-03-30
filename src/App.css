@@ -1,3 +1,9 @@
+@media screen and (max-width: 782px) {
+  body .page-container {
+    width: 90%;
+  }
+}
+
 .page-container {
   width: 80%;
   margin: 0px auto;
@@ -9,7 +15,7 @@
   padding: 0;
 }
 
-.expense-list-item {
+.expense-list-item, .expense-list-head {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,15 +25,26 @@
   box-sizing: border-box;
 }
 
+.expense-list-container .expense-list-head {
+  background-color: #f3f1d9;
+  font-weight: bold;
+}
+
+.expense-list-item > *, .expense-list-head > * {
+  width: 33%;
+}
+
 .date-display {
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
   background-color: #888;
-  color: #222;
+  color: #FFF;
 }
 
 .form-container {
+  box-sizing: border-box;
+  margin:15px 0;
   padding: 15px;
   
   display: flex;
